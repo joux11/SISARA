@@ -1,0 +1,6 @@
+@SISARA.WebAPI_HostAddress = http://localhost:5010
+
+GET {{SISARA.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

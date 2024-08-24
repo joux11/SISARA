@@ -1,0 +1,14 @@
+SISARA.Backend/.vs
+
+SISARA.Backend/src/SISARA.Application/bin
+SISARA.Backend/src/SISARA.Application/obj
+
+SISARA.Backend/src/SISARA.Domain/bin
+SISARA.Backend/src/SISARA.Domain/obj
+
+SISARA.Backend/src/SISARA.Infrastructure/bin
+SISARA.Backend/src/SISARA.Infrastructure/obj
+
+SISARA.Backend/src/SISARA.WebApi/bin
+SISARA.Backend/src/SISARA.WebApi/obj
+
