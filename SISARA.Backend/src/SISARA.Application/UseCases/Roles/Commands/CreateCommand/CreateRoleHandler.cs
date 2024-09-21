@@ -19,7 +19,7 @@ namespace SISARA.Application.UseCases.Roles.Commands.CreateCommand
             {
                 var role = new Role
                 {
-                    Name = request.Name
+                    Name = request.Name!
                 };
                 response.Data = await _roleRepository.RoleRegister(role);
                 if (response.Data)

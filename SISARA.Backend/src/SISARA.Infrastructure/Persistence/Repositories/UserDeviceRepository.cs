@@ -13,33 +13,33 @@ namespace SISARA.Infrastructure.Persistence.Repositories
         }
         public async Task<IEnumerable<UserDevice>> ListUserDevices()
         {
-            var userDevices = await _context.UserDevice.ToListAsync();
+            var userDevices = await _context.UserDevices.ToListAsync();
             return userDevices;
         }
 
         public async Task<UserDevice> UserDeviceById(uint UserDeviceId)
         {
-            var userDevice = await _context.UserDevice.FindAsync(UserDeviceId);
+            var userDevice = await _context.UserDevices.FindAsync(UserDeviceId);
             return userDevice;
         }
 
         public async Task<bool> UserDeviceDelete(UserDevice userDevice)
         {
-            _context.UserDevice.Remove(userDevice);
+            _context.UserDevices.Remove(userDevice);
             var deviceDelete = await _context.SaveChangesAsync();
             return deviceDelete > 0;
         }
 
         public async Task<uint> UserDeviceRegister(UserDevice userDevice)
         {
-            _context.UserDevice.Add(userDevice);
+            _context.UserDevices.Add(userDevice);
             await _context.SaveChangesAsync();
             return userDevice.Id;
         }
 
         public async Task<bool> UserDeviceUpdate(UserDevice userDevice)
         {
-            _context.UserDevice.Update(userDevice);
+            _context.UserDevices.Update(userDevice);
             var updateDevice = await _context.SaveChangesAsync();
             return updateDevice > 0;
         }

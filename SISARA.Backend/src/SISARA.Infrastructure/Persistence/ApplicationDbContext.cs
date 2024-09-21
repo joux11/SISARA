@@ -31,7 +31,7 @@ namespace SISARA.Infrastructure.Persistence
 
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
-        public DbSet<UserDevice> UserDevice {  get; set; }
+        public DbSet<UserDevice> UserDevices {  get; set; }
 
     }
 }

@@ -9,6 +9,6 @@ SISARA.Backend/src/SISARA.Domain/obj
 SISARA.Backend/src/SISARA.Infrastructure/bin
 SISARA.Backend/src/SISARA.Infrastructure/obj
 
-SISARA.Backend/src/SISARA.WebApi/bin
-SISARA.Backend/src/SISARA.WebApi/obj
+SISARA.Backend/src/SISARA.WebAPI/bin
+SISARA.Backend/src/SISARA.WebAPI/obj
 

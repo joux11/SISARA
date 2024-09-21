@@ -24,7 +24,7 @@ namespace SISARA.Application.UseCases.Users.Commands.CreateCommand
             var response = new BaseResponse<bool>();
             try
             {
-                var passwordHashed = _passwordHasher.HashPassword(request.Password);
+                var passwordHashed = _passwordHasher.HashPassword(request.Password!);
                 var user = _mapper.Map<User>(request);
                 user.Password = passwordHashed;
                 var data = await _userRepository.UserRegister(user);
